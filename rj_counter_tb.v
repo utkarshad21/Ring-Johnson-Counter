@@ -10,7 +10,7 @@ wire [3:0] q;
 reg clk;
 reg rst; 
 reg rj;
-rj_varad r1(q, clk, rst, rj);
+rj_counter r1(q, clk, rst, rj);
 initial begin
 clk = 0;
 forever #20 clk = ~clk;
